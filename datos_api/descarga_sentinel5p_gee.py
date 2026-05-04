@@ -21,7 +21,7 @@ from tqdm import tqdm
 # ── Configuración ─────────────────────────────────────────
 BASE_DIR   = Path("D:/analitica/sentinel5p")
 START_DATE = "2020-01-01"
-END_DATE   = "2024-12-31"
+END_DATE   = "2026-12-31"
 BBOX_CALI  = [-76.60, 3.30, -76.40, 3.55]   # xmin, ymin, xmax, ymax
 GCS_BUCKET = "geovision-cali-bucket"         # cambia por tu bucket real
 SCALE_M    = 5000                            # resolución export (5 km)
