@@ -1,0 +1,18 @@
+# ============================================================
+# GeoVision-CLIP Cali — Dependencias
+# ============================================================
+# Instalacion:
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- Descarga DAGMA ---
+requests>=2.31
+pandas>=2.0
+pyarrow>=14.0        # Parquet (consolidacion)
+
+# --- S5P GEE ---
+earthengine-api>=1.7
+geemap>=0.37
+
+# --- Utilidades ---
+tqdm>=4.66
