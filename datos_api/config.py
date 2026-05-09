@@ -28,6 +28,10 @@ DATA_DIR = Path(_data_dir_env) if _data_dir_env else PROJECT_ROOT / "data"
 # ── Subdirectorios ────────────────────────────────────────
 DAGMA_DIR      = DATA_DIR / "dagma"
 S5P_DIR        = DATA_DIR / "sentinel5p"
+SENTINEL2_DIR  = DATA_DIR / "sentinel2"
+ERA5_DIR       = DATA_DIR / "era5"
+MODIS_DIR      = DATA_DIR / "modis"
+ZARR_DIR       = DATA_DIR / "zarr"
 MANIFESTS_DIR  = DATA_DIR / "manifests"
 
 # ── Bounding Box Cali ─────────────────────────────────────
