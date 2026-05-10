@@ -1,0 +1,42 @@
+======================================================================
+GeoVision-CLIP Cali — EDA Sentinel-2 L2A
+======================================================================
+
+Datos: 3470 archivos · 277.597 GB · 347 escenas
+Periodo: 2020-01-01 / 2024-12-31
+Bbox: [-76.65, 3.25, -76.35, 3.6]
+Escenas muestreadas: 40
+Píxeles analizados: 1,059,130,039
+
+─ Estadísticas descriptivas ─
+    Banda         Descripción  N píxeles    Media  Mediana      Std     P1    P99       CV
+B02 (10m)       Blue (490 nm)  192562402 0.302865   0.0977 0.368754 0.0151 1.3834 1.217550
+B03 (10m)      Green (560 nm)  192590181 0.297705   0.1132 0.335483 0.0215 1.2854 1.126900
+B04 (10m)        Red (665 nm)  192596487 0.276128   0.1056 0.323101 0.0130 1.2204 1.170113
+B05 (20m)  RedEdge 1 (705 nm)   48130747 0.318984   0.1523 0.317493 0.0309 1.2592 0.995326
+B06 (20m)  RedEdge 2 (740 nm)   48130747 0.392643   0.2854 0.258484 0.0674 1.1762 0.658319
+B07 (20m)  RedEdge 3 (783 nm)   48130747 0.420711   0.3387 0.239089 0.0813 1.1426 0.568298
+B08 (10m)        NIR (842 nm)  192596487 0.413230   0.3395 0.236891 0.0672 1.1323 0.573266
+B8A (20m) NIR narrow (865 nm)   48130747 0.435724   0.3664 0.227285 0.0855 1.1185 0.521627
+B11 (20m)    SWIR 1 (1610 nm)   48130747 0.290995   0.2379 0.162569 0.0428 0.7357 0.558668
+B12 (20m)    SWIR 2 (2190 nm)   48130747 0.207683   0.1526 0.147150 0.0224 0.6119 0.708531
+
+─ Completitud ─
+  Escenas con datos de completitud: 40
+  Mediana completitud: 0.55
+  P25 completitud: 0.55
+
+─ Resumen temporal ─
+  2020: 108 escenas únicas (1080 archivos)
+  2021:  91 escenas únicas (910 archivos)
+  2022:  33 escenas únicas (330 archivos)
+  2023:  46 escenas únicas (460 archivos)
+  2024:  69 escenas únicas (690 archivos)
+  Total: 347 escenas (3,470 archivos × 10 bandas)
+
+  Distribución mensual (escenas únicas por año-mes):
+    2020: 23 19  9  6  2  8  6  7 11 10  4  3  total=108
+    2021:  8  6  2  1  6  4 15  4 10 17 11  7  total=91
+    2022:  4  1  1  4  2  2  3  3  8  3  0  2  total=33
+    2023:  5  5  2  1  6  4  5  6  4  4  2  2  total=46
+    2024: 11  5  3  6  2  5  7 11  7  6  2  4  total=69

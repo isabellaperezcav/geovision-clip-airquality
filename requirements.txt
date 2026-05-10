@@ -1,3 +1,24 @@
 azure-identity
 azure-storage-file-datalake
 adlfs
+torch==2.0.1 
+torchvision==0.15.2 
+torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
+pillow 
+pandas 
+scikit-learn 
+ftfy 
+tqdm 
+matplotlib 
+transformers 
+adapter-transformers 
+open_clip_torch 
+pycocotools 
+timm 
+clip-benchmark 
+torch-rs
+
+# https://pypi.org/project/open-clip-torch/
+open-clip-torch
+clip_benchmark
