@@ -1,0 +1,19 @@
+{
+  "zarr_path": "D:\\analitica\\procesado_zarr\\sentinel2_224.zarr",
+  "n_escenas": 363,
+  "shape": [
+    363,
+    4,
+    224,
+    224
+  ],
+  "bandas": [
+    "B02",
+    "B03",
+    "B04",
+    "B08"
+  ],
+  "tile_size": 224,
+  "normalizacion": "GeoRSCLIP (CLIP_MEAN/STD)",
+  "md5_metadata": "d28ded152588d43acdf4f1f42579110c"
+}

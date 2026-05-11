@@ -1,3 +1,4 @@
+cdsapi
 azure-identity
 azure-storage-file-datalake
 adlfs
@@ -22,3 +23,27 @@ torch-rs
 # https://pypi.org/project/open-clip-torch/
 open-clip-torch
 clip_benchmark
+
+dask[distributed]
+rasterio
+zarr
+bokeh>=3.1.0
+dask[array]
+numcodecs
+pyproj 
+shapely
+
+azure-storage-blob 
+azure-identity 
+adlfs 
+fsspec 
+python-dotenv 
+netCDF4 
+h5py 
+scipy 
+numpy
+seaborn 
+
+transformers 
+huggingface_hub
+
