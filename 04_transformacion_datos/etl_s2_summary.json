@@ -14,6 +14,7 @@
     "B08"
   ],
   "tile_size": 224,
-  "normalizacion": "GeoRSCLIP (CLIP_MEAN/STD)",
-  "md5_metadata": "d28ded152588d43acdf4f1f42579110c"
+  "normalizacion": "GeoRSCLIP (CLIP_MEAN/STD) \u2014 aplicada UNA vez en read_and_resize_band",
+  "md5_metadata": "d28ded152588d43acdf4f1f42579110c",
+  "escena_idx_map": "D:\\analitica\\procesado_zarr\\escena_idx_map.json"
 }
