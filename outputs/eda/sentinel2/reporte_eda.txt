@@ -1,0 +1,41 @@
+======================================================================
+GeoVision-CLIP Cali — EDA Sentinel-2 L2A
+======================================================================
+
+Datos: 3470 archivos · 277.597 GB · 347 escenas
+Periodo: 2020-01-01 / 2024-12-31
+Bbox: [-76.65, 3.25, -76.35, 3.6]
+Escenas muestreadas: 40
+Píxeles analizados: 1,066,375,887
+
+─ Estadísticas descriptivas ─
+    Banda         Descripción  N píxeles    Media  Mediana      Std     P1    P99       CV
+B02 (10m)       Blue (490 nm)  193905874 0.272720   0.0774 0.345048 0.0144 1.3069 1.265211
+B03 (10m)      Green (560 nm)  193906649 0.270016   0.0964 0.313015 0.0227 1.2136 1.159249
+B04 (10m)        Red (665 nm)  193906668 0.249461   0.0867 0.302800 0.0135 1.1572 1.213815
+B05 (20m)  RedEdge 1 (705 nm)   48458338 0.293516   0.1358 0.298515 0.0327 1.2036 1.017032
+B06 (20m)  RedEdge 2 (740 nm)   48458338 0.373347   0.2739 0.241413 0.0703 1.1269 0.646617
+B07 (20m)  RedEdge 3 (783 nm)   48458338 0.403159   0.3268 0.222929 0.0846 1.0954 0.552955
+B08 (10m)        NIR (842 nm)  193906668 0.395866   0.3280 0.220159 0.0705 1.0810 0.556145
+B8A (20m) NIR narrow (865 nm)   48458338 0.418805   0.3540 0.212170 0.0892 1.0743 0.506606
+B11 (20m)    SWIR 1 (1610 nm)   48458338 0.278711   0.2250 0.157312 0.0446 0.7155 0.564427
+B12 (20m)    SWIR 2 (2190 nm)   48458338 0.196428   0.1378 0.143764 0.0234 0.5991 0.731894
+
+─ Completitud ─
+  Escenas con datos de completitud: 40
+  Mediana completitud: 0.55
+  P25 completitud: 0.55
+
+─ Resumen temporal ─
+  2020: 108 escenas únicas (×10 bandas = 1080 archivos)
+  2021: 91 escenas únicas (×10 bandas = 910 archivos)
+  2022: 33 escenas únicas (×10 bandas = 330 archivos)
+  2023: 46 escenas únicas (×10 bandas = 460 archivos)
+  2024: 69 escenas únicas (×10 bandas = 690 archivos)
+
+  Distribución mensual (escenas únicas por año-mes):
+    2020: 23 19  9  6  2  8  6  7 11 10  4  3
+    2021:  8  6  2  1  6  4 15  4 10 17 11  7
+    2022:  4  1  1  4  2  2  3  3  8  3  0  2
+    2023:  5  5  2  1  6  4  5  6  4  4  2  2
+    2024: 11  5  3  6  2  5  7 11  7  6  2  4

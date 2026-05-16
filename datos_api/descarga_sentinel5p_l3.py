@@ -39,7 +39,7 @@ import numpy as np
 from tqdm import tqdm
 
 from config import S5P_DIR, MANIFESTS_DIR, START_YEAR, END_YEAR
-from config import check_disk_space
+from config import check_disk_space, check_ram
 
 S5P_L3_DIR = S5P_DIR / "l3"
 MANIFEST_PATH = MANIFESTS_DIR / "manifest_sentinel5p_l3.json"
@@ -227,6 +227,7 @@ def main():
     entries = []
     for dia in tqdm(todos_dias, desc="Procesando dias"):
         check_disk_space("S5P", fatal=False)
+        check_ram("S5P")
 
         with ThreadPoolExecutor(max_workers=4) as pool:
             futuros = {

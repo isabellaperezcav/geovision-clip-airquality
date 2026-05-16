@@ -1,0 +1,6 @@
+
+		begin
+      f = addfile("/home/nicolas/Escritorio/Academico/analitica_datos/carlos_andres_ferro/geovision-clip-airquality/data/era5/2025/era5_cali_2025_11_blh.nc","r")
+      print(f)
+		end
+    
