@@ -1,0 +1,108 @@
+{
+  "kriging": {
+    "NO2": {
+      "variogram_model": "spherical",
+      "params": "[1.00000000e-10 6.86923136e-02 1.13197618e-10]",
+      "tiempo_s": 0.01
+    },
+    "SO2": {
+      "variogram_model": "spherical",
+      "params": "[3.42816831e-08 6.86923136e-02 4.51817158e-08]",
+      "tiempo_s": 0.01
+    },
+    "O3": {
+      "variogram_model": "spherical",
+      "params": "[6.71684135e-05 6.86923136e-02 2.85731602e-05]",
+      "tiempo_s": 0.01
+    }
+  },
+  "loocv": {
+    "NO2": {
+      "RMSE": 1.26e-05,
+      "MAE": 1.039e-05,
+      "R2": 0.065149,
+      "N": 167
+    },
+    "SO2": {
+      "RMSE": 0.00022758,
+      "MAE": 0.00017046,
+      "R2": -0.060481,
+      "N": 167
+    },
+    "O3": {
+      "RMSE": 0.00510415,
+      "MAE": 0.00417436,
+      "R2": 0.258237,
+      "N": 167
+    }
+  },
+  "moran": {
+    "NO2": {
+      "I": 0.882041,
+      "p_sim": 0.001,
+      "gate_OK": true
+    },
+    "SO2": {
+      "I": 0.860356,
+      "p_sim": 0.001,
+      "gate_OK": true
+    },
+    "O3": {
+      "I": 0.861475,
+      "p_sim": 0.001,
+      "gate_OK": true
+    }
+  },
+  "kmeans": {
+    "K": 4,
+    "silhouette": 0.2955,
+    "perfiles": [
+      {
+        "cluster": 0,
+        "perfil": "Mixta / transición",
+        "pct_area": 39.8
+      },
+      {
+        "cluster": 1,
+        "perfil": "Mixta / transición",
+        "pct_area": 16.2
+      },
+      {
+        "cluster": 2,
+        "perfil": "Quema caña (SO2 alto)",
+        "pct_area": 17.6
+      },
+      {
+        "cluster": 3,
+        "perfil": "Mixta / transición",
+        "pct_area": 26.4
+      }
+    ]
+  },
+  "residuos": {
+    "NO2": {
+      "mean": -6.850808324117546e-08,
+      "std": 6.961734072701961e-07,
+      "mae": 3.2819132337970206e-07,
+      "n": 167,
+      "nugget_value": 4.846574129901944e-13,
+      "nugget_pure": true
+    },
+    "SO2": {
+      "mean": 5.357979392018464e-05,
+      "std": 0.00012457367553420328,
+      "mae": 6.561700092390885e-05,
+      "n": 167,
+      "nugget_value": 1.5518600636100958e-08,
+      "nugget_pure": true
+    },
+    "O3": {
+      "mean": 1.6733995383073102e-05,
+      "std": 0.000579784642518752,
+      "mae": 0.00028355046772759627,
+      "n": 167,
+      "nugget_value": 3.361502317005971e-07,
+      "nugget_pure": true
+    }
+  }
+}
