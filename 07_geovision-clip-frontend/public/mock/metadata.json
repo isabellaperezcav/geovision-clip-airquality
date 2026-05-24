@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-05-23T16:09:29.470879+00:00",
+  "seed": 67,
+  "modelVersion": "mvp-0.1-mock",
+  "bbox": {
+    "xmin": -76.6,
+    "ymin": 3.3,
+    "xmax": -76.4,
+    "ymax": 3.55
+  },
+  "cellDeg": 0.005,
+  "gridShape": [
+    40,
+    50
+  ],
+  "pollutants": [
+    "NO2",
+    "SO2",
+    "O3"
+  ],
+  "horizons": [
+    "T+1",
+    "T+3",
+    "T+7"
+  ],
+  "files": [
+    {
+      "file": "grid_no2_t1.geojson",
+      "pollutant": "NO2",
+      "horizon": "T+1",
+      "valueRange": [
+        59.2129,
+        114.6709
+      ],
+      "sigmaRange": [
+        4.3589,
+        18.5856
+      ],
+      "sizeKB": 462.1
+    },
+    {
+      "file": "grid_no2_t3.geojson",
+      "pollutant": "NO2",
+      "horizon": "T+3",
+      "valueRange": [
+        59.951,
+        94.4073
+      ],
+      "sigmaRange": [
+        5.367,
+        24.3757
+      ],
+      "sizeKB": 462.8
+    },
+    {
+      "file": "grid_no2_t7.geojson",
+      "pollutant": "NO2",
+      "horizon": "T+7",
+      "valueRange": [
+        60.3594,
+        100.1342
+      ],
+      "sigmaRange": [
+        8.1914,
+        32.9873
+      ],
+      "sizeKB": 463.3
+    },
+    {
+      "file": "grid_so2_t1.geojson",
+      "pollutant": "SO2",
+      "horizon": "T+1",
+      "valueRange": [
+        0.1567,
+        0.3775
+      ],
+      "sigmaRange": [
+        0.0217,
+        0.0834
+      ],
+      "sizeKB": 459.4
+    },
+    {
+      "file": "grid_so2_t3.geojson",
+      "pollutant": "SO2",
+      "horizon": "T+3",
+      "valueRange": [
+        0.1558,
+        0.316
+      ],
+      "sigmaRange": [
+        0.0289,
+        0.1097
+      ],
+      "sizeKB": 459.4
+    },
+    {
+      "file": "grid_so2_t7.geojson",
+      "pollutant": "SO2",
+      "horizon": "T+7",
+      "valueRange": [
+        0.1611,
+        0.2908
+      ],
+      "sigmaRange": [
+        0.0389,
+        0.1524
+      ],
+      "sizeKB": 459.4
+    },
+    {
+      "file": "grid_o3_t1.geojson",
+      "pollutant": "O3",
+      "horizon": "T+1",
+      "valueRange": [
+        238.4816,
+        296.4011
+      ],
+      "sigmaRange": [
+        4.6262,
+        17.3938
+      ],
+      "sizeKB": 464.2
+    },
+    {
+      "file": "grid_o3_t3.geojson",
+      "pollutant": "O3",
+      "horizon": "T+3",
+      "valueRange": [
+        240.3571,
+        272.2591
+      ],
+      "sigmaRange": [
+        6.7615,
+        23.426
+      ],
+      "sizeKB": 464.9
+    },
+    {
+      "file": "grid_o3_t7.geojson",
+      "pollutant": "O3",
+      "horizon": "T+7",
+      "valueRange": [
+        240.5293,
+        275.8568
+      ],
+      "sigmaRange": [
+        9.4054,
+        32.8121
+      ],
+      "sizeKB": 465.3
+    }
+  ]
+}

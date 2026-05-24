@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --surface-1: #fafafa;
+  --surface-2: #f4f4f5;
+  --border-subtle: rgba(10, 10, 10, 0.08);
+  --border-strong: rgba(10, 10, 10, 0.16);
+  --muted: #71717a;
+  --muted-foreground: #52525b;
+  --accent: #0a0a0a;
+  --accent-foreground: #fafafa;
+  --success: #15803d;
+  --warning: #b45309;
+  --danger: #b91c1c;
+  --info: #1d4ed8;
+
+  --shadow-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-elevation-2: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-elevation-3: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --surface-1: #111113;
+  --surface-2: #18181b;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --muted: #a1a1aa;
+  --muted-foreground: #d4d4d8;
+  --accent: #fafafa;
+  --accent-foreground: #0a0a0a;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --info: #60a5fa;
+
+  --shadow-elevation-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-elevation-2: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-elevation-3: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+.font-numeric,
+.font-numeric * {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  transition-property: background-color, border-color, color, transform, opacity, box-shadow;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgba(250, 250, 250, 0.85) !important;
+  font-family: var(--font-geist-mono), ui-monospace, monospace !important;
+  font-size: 10px !important;
+}
+
+.dark .maplibregl-ctrl-attrib {
+  background: rgba(17, 17, 19, 0.85) !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: var(--muted-foreground) !important;
+}
+
+.maplibregl-popup-content {
+  background: var(--surface-1) !important;
+  color: var(--foreground) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 8px !important;
+  box-shadow: var(--shadow-elevation-2) !important;
+  padding: 10px 12px !important;
+  font-family: var(--font-geist-sans), ui-sans-serif, sans-serif !important;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: var(--border-subtle) !important;
+}
+
+.maplibregl-ctrl-group {
+  background: var(--surface-1) !important;
+  border: 1px solid var(--border-subtle) !important;
+  box-shadow: var(--shadow-elevation-1) !important;
+}
+
+.maplibregl-ctrl-group button {
+  background: transparent !important;
+  color: var(--foreground) !important;
+}
+
+.dark .maplibregl-ctrl-icon {
+  filter: invert(0.92);
+}

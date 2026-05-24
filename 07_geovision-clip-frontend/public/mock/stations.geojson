@@ -1,0 +1,187 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.50653649,
+          3.45731978
+        ]
+      },
+      "properties": {
+        "id": "base-aerea",
+        "name": "Base Aerea Marco Fidel Suarez",
+        "zone": "Comuna 7",
+        "variables": [
+          "NO2",
+          "SO2",
+          "O3"
+        ],
+        "coverage": 0.91
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.51908184,
+          3.4475941
+        ]
+      },
+      "properties": {
+        "id": "era-obrero",
+        "name": "ERA Obrero",
+        "zone": "Comuna 9",
+        "variables": [
+          "NO2",
+          "SO2"
+        ],
+        "coverage": 0.79
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.54961789,
+          3.41545841
+        ]
+      },
+      "properties": {
+        "id": "canaveralejo",
+        "name": "Canaveralejo",
+        "zone": "Comuna 19",
+        "variables": [
+          "NO2",
+          "O3"
+        ],
+        "coverage": 0.74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.53372474,
+          3.37796681
+        ]
+      },
+      "properties": {
+        "id": "univalle",
+        "name": "Universidad del Valle",
+        "zone": "Comuna 17",
+        "variables": [
+          "NO2",
+          "SO2",
+          "O3"
+        ],
+        "coverage": 0.93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.53125401,
+          3.30449556
+        ]
+      },
+      "properties": {
+        "id": "pance",
+        "name": "Pance",
+        "zone": "Comuna 53",
+        "variables": [
+          "O3"
+        ],
+        "coverage": 0.62
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.49495633,
+          3.41717874
+        ]
+      },
+      "properties": {
+        "id": "transitoria",
+        "name": "Estacion Transitoria EDB Navarro",
+        "zone": "Comuna 13",
+        "variables": [
+          "NO2",
+          "SO2"
+        ],
+        "coverage": 0.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.46657547,
+          3.42825808
+        ]
+      },
+      "properties": {
+        "id": "compartir",
+        "name": "Compartir",
+        "zone": "Comuna 21",
+        "variables": [
+          "NO2",
+          "O3"
+        ],
+        "coverage": 0.79
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.51805771,
+          3.48822548
+        ]
+      },
+      "properties": {
+        "id": "flora",
+        "name": "La Flora",
+        "zone": "Comuna 2",
+        "variables": [
+          "NO2",
+          "SO2",
+          "O3"
+        ],
+        "coverage": 0.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.53097834,
+          3.45551754
+        ]
+      },
+      "properties": {
+        "id": "ermita",
+        "name": "La Ermita",
+        "zone": "Comuna 3",
+        "variables": [
+          "NO2",
+          "SO2"
+        ],
+        "coverage": 0.66
+      }
+    }
+  ]
+}
