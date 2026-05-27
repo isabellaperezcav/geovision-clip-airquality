@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"c:/Users/isape/OneDrive/Escritorio/ANALITICA/Proyecto3/_patch_02b.py\")",
+      "Bash(python \"c:/Users/isape/OneDrive/Escritorio/ANALITICA/Proyecto3/_dump_nb.py\" \"c:/Users/isape/OneDrive/Escritorio/ANALITICA/Proyecto3/04_transformacion_datos/02b_SAM_Segmentacion_Tiles_Zarr.ipynb\")",
+      "Bash(ls -lt \"C:/Users/isape/.claude/projects/c--Users-isape-OneDrive-Escritorio-ANALITICA-Proyecto3/\" 2>&1 | head -60)",
+      "Read(//c/Users/isape/.claude/projects/c--Users-isape-OneDrive-Escritorio-ANALITICA-Proyecto3/**)",
+      "Bash(python \"c:/Users/isape/OneDrive/Escritorio/ANALITICA/Proyecto3/_scan_transcripts.py\")"
+    ]
+  }
+}
