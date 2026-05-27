@@ -68,6 +68,7 @@ data/
 # claves AWS, GCP, etc.
 *.pem
 *.key
+.claude/
 credentials.json
 
 # =========================
