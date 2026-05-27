@@ -1,0 +1,24 @@
+[project]
+name = "geovision-api"
+version = "0.1.0"
+description = "Backend FastAPI de GeoVision-CLIP Cali: sirve mapas de contaminacion (ug/m3) por ST-Kriging sobre DAGMA, validacion LOO-CV y capa del modelo profundo v11."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=17",
+    "scipy>=1.13",
+    "pykrige>=1.7",
+    "esda>=2.5",
+    "libpysal>=4.12",
+    "rasterio>=1.3",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100

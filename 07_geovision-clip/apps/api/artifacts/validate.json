@@ -1,0 +1,251 @@
+{
+  "method": "LOO-CV",
+  "modelVersion": "v11-latefusion+stkriging-dagma",
+  "generatedAt": "2026-05-27T08:01:27.707435+00:00",
+  "summary": {
+    "NO2": {
+      "rmse": 6.606,
+      "mae": 4.519,
+      "r2": null,
+      "bias": -0.0025,
+      "n": 1096,
+      "metodo": "validacion temporal (1 estacion)"
+    },
+    "SO2": {
+      "rmse": 3.0874,
+      "mae": 2.4089,
+      "r2": -0.4216,
+      "bias": 0.3066,
+      "n": 5,
+      "metodo": "LOSO-Kriging"
+    },
+    "O3": {
+      "rmse": 15.2431,
+      "mae": 12.6769,
+      "r2": 0.0092,
+      "bias": 0.0967,
+      "n": 7,
+      "metodo": "LOSO-Kriging"
+    }
+  },
+  "stations": [
+    {
+      "id": "univalle",
+      "name": "Universidad del Valle",
+      "zone": "Comuna 17",
+      "metrics": {
+        "NO2": {
+          "rmse": 6.606,
+          "mae": 4.519,
+          "r2": null,
+          "bias": -0.0025,
+          "n": 1096
+        },
+        "O3": {
+          "rmse": 24.8756,
+          "mae": 24.8756,
+          "r2": null,
+          "bias": -24.8756,
+          "n": 1681
+        }
+      }
+    },
+    {
+      "id": "base-aerea",
+      "name": "Base Aérea Marco Fidel Suárez",
+      "zone": "Comuna 7",
+      "metrics": {
+        "SO2": {
+          "rmse": 4.8968,
+          "mae": 4.8968,
+          "r2": null,
+          "bias": -4.8968,
+          "n": 1210
+        },
+        "O3": {
+          "rmse": 19.6628,
+          "mae": 19.6628,
+          "r2": null,
+          "bias": 19.6628,
+          "n": 1439
+        }
+      }
+    },
+    {
+      "id": "canaveralejo",
+      "name": "Cañaveralejo",
+      "zone": "Comuna 19",
+      "metrics": {
+        "SO2": {
+          "rmse": 3.9074,
+          "mae": 3.9074,
+          "r2": null,
+          "bias": 3.9074,
+          "n": 1701
+        }
+      }
+    },
+    {
+      "id": "ermita",
+      "name": "La Ermita",
+      "zone": "Comuna 3",
+      "metrics": {
+        "SO2": {
+          "rmse": 0.0277,
+          "mae": 0.0277,
+          "r2": null,
+          "bias": -0.0277,
+          "n": 1834
+        }
+      }
+    },
+    {
+      "id": "flora",
+      "name": "La Flora",
+      "zone": "Comuna 2",
+      "metrics": {
+        "SO2": {
+          "rmse": 2.8814,
+          "mae": 2.8814,
+          "r2": null,
+          "bias": 2.8814,
+          "n": 1274
+        },
+        "O3": {
+          "rmse": 1.0257,
+          "mae": 1.0257,
+          "r2": null,
+          "bias": 1.0257,
+          "n": 1322
+        }
+      }
+    },
+    {
+      "id": "transitoria",
+      "name": "Estación Transitoria EDB Navarro",
+      "zone": "Comuna 13",
+      "metrics": {
+        "SO2": {
+          "rmse": 0.3314,
+          "mae": 0.3314,
+          "r2": null,
+          "bias": -0.3314,
+          "n": 643
+        },
+        "O3": {
+          "rmse": 14.7353,
+          "mae": 14.7353,
+          "r2": null,
+          "bias": -14.7353,
+          "n": 294
+        }
+      }
+    },
+    {
+      "id": "compartir",
+      "name": "Compartir",
+      "zone": "Comuna 21",
+      "metrics": {
+        "O3": {
+          "rmse": 5.1225,
+          "mae": 5.1225,
+          "r2": null,
+          "bias": 5.1225,
+          "n": 1743
+        }
+      }
+    },
+    {
+      "id": "era-obrero",
+      "name": "ERA Obrero",
+      "zone": "Comuna 9",
+      "metrics": {
+        "O3": {
+          "rmse": 18.8965,
+          "mae": 18.8965,
+          "r2": null,
+          "bias": 18.8965,
+          "n": 1401
+        }
+      }
+    },
+    {
+      "id": "pance",
+      "name": "Pance",
+      "zone": "Comuna 53",
+      "metrics": {
+        "O3": {
+          "rmse": 4.4195,
+          "mae": 4.4195,
+          "r2": null,
+          "bias": -4.4195,
+          "n": 1785
+        }
+      }
+    }
+  ],
+  "kpis": {
+    "r2_loo_avg": {
+      "value": -0.2062,
+      "grade": "NO_CUMPLE",
+      "gases_evaluables": [
+        "SO2",
+        "O3"
+      ],
+      "gases_excluidos": [
+        "NO2"
+      ],
+      "thresholds": {
+        "min": 0.55,
+        "exc": 0.75
+      }
+    },
+    "moran_i": {
+      "min_I": 0.9697,
+      "max_p": 0.001,
+      "n_pass": 9,
+      "n_total": 9,
+      "grade": "EXCELENTE",
+      "thresholds": {
+        "min_I": 0.3,
+        "exc_I": 0.5,
+        "max_p": 0.05
+      }
+    },
+    "rmse_t1": {
+      "NO2": {
+        "value": null,
+        "grade": "NO_EVALUABLE",
+        "reason": "una sola estacion DAGMA, LOO-CV no defendible"
+      },
+      "SO2": {
+        "value": 3.0874,
+        "grade": "CUMPLE",
+        "thresholds": {
+          "min": 6.0,
+          "exc": 3.0
+        }
+      },
+      "O3": {
+        "value": 15.2431,
+        "grade": "NO_CUMPLE",
+        "thresholds": {
+          "min": 12.0,
+          "exc": 6.0
+        }
+      }
+    },
+    "degradacion_ratio": {
+      "value": -0.0127,
+      "grade": "EXCELENTE",
+      "gases": [
+        "SO2",
+        "O3"
+      ],
+      "thresholds": {
+        "min": 0.6,
+        "exc": 0.3
+      }
+    }
+  }
+}

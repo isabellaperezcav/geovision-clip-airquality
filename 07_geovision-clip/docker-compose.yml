@@ -1,0 +1,31 @@
+# GeoVision-CLIP Cali - orquestacion local (backend + frontend).
+# Levantar todo:   docker compose up --build
+# Solo backend:    docker compose up --build api
+services:
+  api:
+    build: ./apps/api
+    image: geovision-api:latest
+    container_name: geovision-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health').status==200 else 1)"]
+      interval: 30s
+      timeout: 4s
+      retries: 3
+
+  web:
+    build:
+      context: ./apps/web
+      args:
+        # NEXT_PUBLIC_ se hornea en build. El navegador del host llama al backend
+        # publicado en localhost:8000. Ajustar al dominio publico al desplegar.
+        NEXT_PUBLIC_API_URL: "http://localhost:8000"
+    image: geovision-web:latest
+    container_name: geovision-web
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

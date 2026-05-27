@@ -1,0 +1,170 @@
+{
+  "generatedAt": "2026-05-27T08:01:27.413765+00:00",
+  "seed": 137,
+  "modelVersion": "v11-latefusion+stkriging-dagma",
+  "units": "ug/m3",
+  "target": "surface_concentration",
+  "bbox": {
+    "xmin": -76.6,
+    "ymin": 3.3,
+    "xmax": -76.4,
+    "ymax": 3.55
+  },
+  "cellDeg": 0.005,
+  "gridShape": [
+    50,
+    40
+  ],
+  "pollutants": [
+    "NO2",
+    "SO2",
+    "O3"
+  ],
+  "horizons": [
+    "T+1",
+    "T+3",
+    "T+7"
+  ],
+  "moran": {
+    "NO2": {
+      "I": 0.9846494011672463,
+      "p": 0.001,
+      "n": 2000
+    },
+    "SO2": {
+      "I": 0.9709909922263948,
+      "p": 0.001,
+      "n": 2000
+    },
+    "O3": {
+      "I": 0.9880670820139179,
+      "p": 0.001,
+      "n": 2000
+    }
+  },
+  "notes": {
+    "o3": "Kriging Ordinario sobre 7 estaciones DAGMA (overpass 12-14h). LOO-CV espacial.",
+    "so2": "Kriging Ordinario sobre 5 estaciones DAGMA. LOO-CV espacial.",
+    "no2": "Una sola estacion (Univalle): nivel anclado + textura del modelo v11. Validacion temporal.",
+    "v11": "Capa overlay v11_pattern_*: patron espacial del modelo profundo (columna troposferica, normalizada)."
+  },
+  "files": [
+    {
+      "file": "grid_no2_t1.geojson",
+      "pollutant": "NO2",
+      "horizon": "T+1",
+      "valueRange": [
+        4.997,
+        12.8573
+      ],
+      "sigmaRange": [
+        7.2235,
+        7.2235
+      ]
+    },
+    {
+      "file": "grid_no2_t3.geojson",
+      "pollutant": "NO2",
+      "horizon": "T+3",
+      "valueRange": [
+        4.9751,
+        13.3065
+      ],
+      "sigmaRange": [
+        7.6787,
+        7.6787
+      ]
+    },
+    {
+      "file": "grid_no2_t7.geojson",
+      "pollutant": "NO2",
+      "horizon": "T+7",
+      "valueRange": [
+        4.9288,
+        13.3819
+      ],
+      "sigmaRange": [
+        7.6619,
+        7.6619
+      ]
+    },
+    {
+      "file": "grid_so2_t1.geojson",
+      "pollutant": "SO2",
+      "horizon": "T+1",
+      "valueRange": [
+        3.1666,
+        12.3331
+      ],
+      "sigmaRange": [
+        7.8102,
+        8.6005
+      ]
+    },
+    {
+      "file": "grid_so2_t3.geojson",
+      "pollutant": "SO2",
+      "horizon": "T+3",
+      "valueRange": [
+        2.8901,
+        9.6546
+      ],
+      "sigmaRange": [
+        7.8122,
+        8.2494
+      ]
+    },
+    {
+      "file": "grid_so2_t7.geojson",
+      "pollutant": "SO2",
+      "horizon": "T+7",
+      "valueRange": [
+        2.7856,
+        8.8371
+      ],
+      "sigmaRange": [
+        7.9507,
+        8.323
+      ]
+    },
+    {
+      "file": "grid_o3_t1.geojson",
+      "pollutant": "O3",
+      "horizon": "T+1",
+      "valueRange": [
+        40.0509,
+        88.662
+      ],
+      "sigmaRange": [
+        26.7383,
+        33.0273
+      ]
+    },
+    {
+      "file": "grid_o3_t3.geojson",
+      "pollutant": "O3",
+      "horizon": "T+3",
+      "valueRange": [
+        46.094,
+        92.6488
+      ],
+      "sigmaRange": [
+        26.0862,
+        32.3157
+      ]
+    },
+    {
+      "file": "grid_o3_t7.geojson",
+      "pollutant": "O3",
+      "horizon": "T+7",
+      "valueRange": [
+        50.9416,
+        95.0035
+      ],
+      "sigmaRange": [
+        26.9526,
+        33.4302
+      ]
+    }
+  ]
+}
